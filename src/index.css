@@ -1,0 +1,96 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Genel Stiller */
+body {
+  font-family: "Jersey 10", sans-serif;
+  background-color: #ffffff;
+}
+
+/* Sayfa Başlığı */
+h1 {
+  color: #39fd00;
+  font-size: 3em;
+  margin-bottom: 20px;
+  opacity: 0; /* Başlangıçta metni saydam yap */
+  transform: scale(0.3); /* Başlangıçta metni yarı boyutuna küçült */
+  animation: scaleIn 2s ease forwards; /* scaleIn adında bir animasyon tanımla */
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0; /* Başlangıç değeri: tamamen saydam */
+    transform: scale(0.3); /* Başlangıçta metni yarı boyutuna küçült */
+  }
+  to {
+    opacity: 1; /* Bitiş değeri: tamamen opak */
+    transform: scale(1); /* Bitişte normal boyutuna geri dön */
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Başlangıç değeri: tamamen saydam */
+  }
+  to {
+    opacity: 5; /* Bitiş değeri: tamamen opak */
+  }
+}
+
+/* Ana Menü */
+nav ul {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fcfcfc;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Bölüm Başlıkları */
+section h2 {
+  color: #68ff02;
+  margin-bottom: 10px;
+}
+
+/* Bölüm Açıklamaları */
+section p {
+  color: #3aff02;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #460505;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Linkler */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+

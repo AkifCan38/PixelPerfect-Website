@@ -1,0 +1,253 @@
+/* App.css */
+
+/* Reset CSS */
+/* Reset CSS */
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol, li,
+blockquote,
+figure,
+figcaption,
+hr {
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  color: #b0f605;
+  text-decoration: none;
+  font-size: 50px;
+  padding: 100px;
+  transition: color 0.3s; /* Renk değişimini yumuşaklaştırır */
+}
+
+nav ul li a:hover {
+  color: #012ef8; /* Üzerine gelindiğinde link rengini değiştirir */
+}
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 40px;
+  line-height: 1;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Other reset styles can be added as needed */
+
+/* General styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #852929;
+  color: #747685;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+a {
+  color: #fcfcfc; /* Link rengi değiştirildi */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+/* Header */
+
+.App-header {
+  background-color: #852929;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Navigation menu */
+nav {
+  background-color: #460505;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Son öğenin sağ kenar boşluğunu kaldırır */
+}
+
+
+/* Main content */
+.main-content {
+  margin-top: 40px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.section p {
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.section a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+/* Section styles */
+.section {
+  margin-bottom: 40px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Gölge efekti ekler */
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #944444;
+}
+
+.section p {
+  line-height: 1.6;
+  color: #460505;
+}
+
+.section a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+/* Footer */
+.footer {
+  background-color: #ffffff;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.main-menu-section {
+  text-align: center;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.main-menu-section:hover {
+  transform: scale(1.05);
+}
+.contact-icon {
+  font-size: 50px;
+  color: #094fd9;
+  margin-bottom: 40px;
+
+}
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-right: 100px; /* İkonlar arasında boşluk bırakır */
+}
+
+.contact-icon {
+  font-size: 100px;
+  margin-right: 20px; /* İkon ile metin arasında boşluk bırakır */
+}
+.main-menu-section {
+  padding: 1px; /* Yukarıdan ve alttan 20 piksel boşluk bırakır */
+  padding-left: 75px; /* Soldan 30 piksel boşluk bırakır */
+  padding-right: 75px; /* Sağdan 30 piksel boşluk bırakır */
+}
+
+.main-menu-section h2 {
+  margin-bottom: 50px; /* Başlık ile altındaki içerik arasına 20 piksel boşluk bırakır */
+}
+
+.main-menu-section p {
+  margin-bottom: 1px; /* Paragraflar arasında 10 piksel boşluk bırakır */
+}
+#hero-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 8px 5; /* İçerik ile üst ve alt kenarlar arasına boşluk bırakır */
+  text-align: center; /* Metinleri merkezine hizalar */
+}
+
+#hero-section h2 {
+  font-size: 3em; /* Başlık font büyüklüğü */
+  margin-bottom: 5px; /* Başlık ile altındaki içerik arasına boşluk bırakır */
+}
+
+#hero-section p {
+  font-size: 1.2em; /* Paragraf font büyüklüğü */
+  margin-bottom: 20px; /* Paragraflar arasına boşluk bırakır */
+}
+
+#hero-section img {
+  max-width: 100%; /* Resmin maksimum genişliği */
+  height: auto; /* Otomatik yükseklik ayarı */
+  display: block; /* Resmi blok element olarak gösterir */
+  margin: 0 auto; /* Resmi yatayda merkezler */
+}
+.App-header {
+  font-family: "Jersey 10" ;
+  background-color: #852929;
+  color: #747685;
+  line-height: 1.6;
+  text-align: center;
+}
+/* Animasyonlu efekt */
+@keyframes fadeInAnimation {
+  0% { opacity: 0; filter: grayscale(100%); } /* Başlangıçta opaklık ve siyah-beyaz filtresi uygulanır */
+  100% { opacity: 1; filter: none; } /* Sonunda opaklık ve filtre kaldırılır */
+}
+
+/* Resmin stili */
+.main-menu-section img {
+  animation: fadeInAnimation 2s ease forwards; /* Animasyonu resme uygula, 2 saniyede tamamlanacak şekilde */
+}
+

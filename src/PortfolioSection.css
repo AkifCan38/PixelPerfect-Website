@@ -1,0 +1,88 @@
+/* Portfolio Section Styles */
+.portfolio-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-item {
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid #8a0606;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    max-width: 100%; /* Resimlerin maksimum genişliği */
+    max-height: 400px; /* Resimlerin maksimum yüksekliği */
+    border-radius: 50px;
+}
+
+.portfolio-item h3 {
+    margin-top: 1px;
+    font-size: 1em;
+}
+
+.portfolio-item p {
+    margin-top: 10px;
+}
+
+.portfolio-item.active {
+    border-color: #0929ab; /* Aktif kartın kenar rengi */
+    box-shadow: 0 4px 6px rgba(16, 0, 0, 0.5); /* Aktif kartın gölge rengi */
+}
+
+.portfolio-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-buttons button {
+    margin: 0 10px;
+    padding: 20px;
+    font-size: 0.4em;
+    background-color: #21ee0a;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.portfolio-buttons button.prev-button::before {
+    content: '\2039'; /* Sol ok */
+}
+
+.portfolio-buttons button.next-button::before {
+    content: '\203A'; /* Sağ ok */
+}
+
+.portfolio-buttons button:hover {
+    background-color: #010003;
+}
+
+/* Özel boyutlandırma */
+.portfolio-item:nth-child(1) {
+    width: 750px; /* İlk kutunun genişliği */
+}
+
+.portfolio-item:nth-child(2) {
+    width: 750px; /* İkinci kutunun genişliği */
+}
+
+.portfolio-item:nth-child(3) {
+    width: 750px; /* Üçüncü kutunun genişliği */
+}
+.section-title {
+    font-family: "Jersey 10", sans-serif; /* Yeni font stilini burada belirtin */
+    font-size: 100px; /* İstediğiniz boyuta uygun olarak ayarlayın */
+    font-weight: bold; /* İstediğiniz kalınlıkta ayarlayın */
+    color: #21ee0a; /* İstediğiniz renge uygun olarak ayarlayın */
+    /* Diğer font özelliklerini isteğinize göre ekleyebilirsiniz */
+}
